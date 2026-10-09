@@ -1,0 +1,87 @@
+/* Base Box Sizing Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Background */
+html {
+  background-color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #334155;
+}
+
+/* User Stories 6, 7, 8, 9 & Tests 10-14: Body Sizing and Layout */
+body {
+  background-color: #ffffff;
+  padding: 50px 0; /* 50px top and bottom padding */
+  margin: 0 auto;  /* 0 top/bottom margin, auto left/right to center */
+  width: 80vw;     /* Width set relative to viewport width */
+  min-height: calc(100vh - 100px); /* 100% vh minus top (50px) + bottom (50px) padding */
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  width: 90%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+/* User Story 11 & Test 16: hr width set using percentage */
+hr {
+  width: 85%;
+  border: 0;
+  height: 2px;
+  background-color: #e2e8f0;
+  margin: 25px 0;
+}
+
+/* Main Container */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* User Story 11 & Test 17: section width set using percentage */
+section {
+  width: 85%;
+  background-color: #f8fafc;
+  padding: 24px;
+  border-radius: 8px;
+  border-left: 5px solid #2563eb;
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+  color: #475569;
+  font-size: 1rem;
+}
